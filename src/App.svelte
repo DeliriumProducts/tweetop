@@ -1,11 +1,6 @@
 <script>
   export let name
+  import Navbar from "./components/Navbar"
 </script>
 
-<style>
-  h1 {
-    color: purple;
-  }
-</style>
-
-<h1>Hello {name}!</h1>
+<Navbar />
