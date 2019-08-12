@@ -1,4 +1,6 @@
 <script>
+  import Avatar from "./Avatar"
+
   export let username
   export let avi
 </script>
@@ -45,6 +47,23 @@
     align-items: center;
   }
 
+  .avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar-wrapper > h2 {
+    color: #1da1f2;
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .avatar-wrapper > h2 {
+      display: none;
+    }
+  }
+
   h1 {
     display: flex;
     justify-content: center;
@@ -61,7 +80,10 @@
   </div>
   <div class="filler" />
   {#if username && avi}
-    <img src={avi} alt={username} />
+    <div class="avatar-wrapper">
+      <h2>Welcome, {username}!</h2>
+      <Avatar url={avi} alt={username} />
+    </div>
   {:else}
     <button class="login-btn">Login</button>
   {/if}

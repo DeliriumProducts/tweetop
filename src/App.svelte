@@ -12,4 +12,7 @@
 
 <div class="container">
   <Navbar />
+  <Navbar
+    username="fr3fou"
+    avi="https://pbs.twimg.com/profile_images/1064209784944189440/QtTtTJuT.jpg" />
 </div>
