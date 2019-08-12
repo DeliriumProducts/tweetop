@@ -1,5 +1,7 @@
 # tweetop
 
+🕊 Find the top tweets of a given user on Twitter!
+
 ## TODO
 
 - [ ] oauth with go backend with twitter api
