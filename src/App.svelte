@@ -16,6 +16,9 @@
     flex-direction: column;
     padding: 1rem;
     text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .description {
@@ -28,9 +31,19 @@
     text-align: center;
   }
 
+  @media (max-width: 768px) {
+    .content {
+      width: 80%;
+    }
+  }
+
   .divider {
     width: 100%;
+    margin-top: 1rem;
+    border-radius: 20%;
     background-color: #f1f6fa;
+    height: 0.2rem;
+    border: none;
   }
 </style>
 
@@ -41,6 +54,6 @@
     <span class="description">
       Just login with your Twitter account, enter a username and go!
     </span>
-    <hr class="divider" />
+    <div class="divider" />
   </div>
 </div>
