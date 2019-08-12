@@ -1,6 +1,6 @@
 <script>
-  export let name
   import Navbar from "./components/Navbar"
+  let name
 </script>
 
 <style>
@@ -40,10 +40,25 @@
   .divider {
     width: 100%;
     margin-top: 1rem;
-    border-radius: 20%;
+    margin-bottom: 1rem;
+    border-radius: 50px;
     background-color: #f1f6fa;
     height: 0.2rem;
     border: none;
+  }
+
+  .username {
+    background: #f1f6fa;
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .username:focus {
+    outline: none;
   }
 </style>
 
@@ -54,6 +69,8 @@
     <span class="description">
       Just login with your Twitter account, enter a username and go!
     </span>
+    <div class="divider" />
+    <input placeholder="Username" class="username" type="text" />
     <div class="divider" />
   </div>
 </div>
