@@ -1,6 +1,12 @@
 <script>
   import Navbar from "./components/Navbar"
   import Tweet from "./components/Tweet"
+
+  let name = "Delirium Products!"
+  let avi =
+    "https://pbs.twimg.com/profile_images/1157472456505999363/T8w9d7hq.jpg"
+  let loggedIn = false
+
   let tweets = [
     {
       username: "Dan Abramov",
@@ -35,6 +41,10 @@
       content: "i am the retarded",
     },
   ]
+
+  function onClickLogin() {
+    loggedIn = true
+  }
 </script>
 
 <style>
@@ -50,6 +60,7 @@
     flex-direction: column;
     padding: 1rem;
     text-align: center;
+    padding-top: 100px;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -102,7 +113,11 @@
 </style>
 
 <div class="container">
-  <Navbar />
+  {#if !loggedIn}
+    <Navbar {onClickLogin} />
+  {:else}
+    <Navbar username={name} {avi} />
+  {/if}
   <div class="content">
     <h1 class="title">Find your top tweets!</h1>
     <span class="description">

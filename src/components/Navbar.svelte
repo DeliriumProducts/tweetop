@@ -3,6 +3,7 @@
 
   export let username
   export let avi
+  export let onClickLogin
 </script>
 
 <style>
@@ -12,6 +13,8 @@
     background-color: #f1f6fa;
     flex-direction: row;
     padding: 1rem;
+    position: fixed;
+    height: 80px;
   }
 
   .filler {
@@ -85,6 +88,6 @@
       <Avatar url={avi} alt={username} />
     </div>
   {:else}
-    <button class="login-btn">Login</button>
+    <button class="login-btn" on:click={onClickLogin}>Login</button>
   {/if}
 </nav>
