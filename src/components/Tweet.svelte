@@ -62,6 +62,30 @@
     text-align: left;
     font-weight: 400;
   }
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user-name {
+      text-align: center;
+    }
+
+    .user-handle {
+      text-align: center;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .rt {
+      margin-top: 1rem;
+    }
+  }
 </style>
 
 <div class="container">

@@ -8,6 +8,9 @@
 - [ ] make tweet component
   - [ ] handle posts with images
   - [ ] handle posts with embeded tweets (quote tweets)
-  - [ ] handle regular posts
+  - [x] handle regular posts
+  - [ ] handle polls
+  - [ ] handle links (previews)
+  - [ ] handle mentions
 
 [figma link](https://www.figma.com/file/Q7t0w0oB8lbOtUnWZ7y4Dj/Twitter-Top-Posts?node-id=0%3A1)

@@ -7,9 +7,8 @@
       handle: "@dan_abramov",
       avi:
         "https://pbs.twimg.com/profile_images/1096807971374448640/rVCDhxkG.png",
-      rt: 256,
-      content:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, iste voluptatem omnis repellendus voluptatum excepturi vel distinctio repellat cumque quos dolorem quisquam praesentium reprehenderit atque quod fugit voluptatibus aperiam? Ipsum. ",
+      rt: 99999,
+      content: "react hooks",
     },
     {
       username: "Delirium Products!",
@@ -18,6 +17,14 @@
         "https://pbs.twimg.com/profile_images/1157472456505999363/T8w9d7hq.jpg",
       rt: 50,
       content: "We are pleased to announce our latest project - LuncherBox!",
+    },
+    {
+      username: "IMPZERO",
+      handle: "@impzero",
+      avi:
+        "https://pbs.twimg.com/profile_images/1092758263744118785/-3MA9koq.jpg",
+      rt: 20,
+      content: "i am not do the cheating",
     },
     {
       username: "fr3fou!! 🎀",
