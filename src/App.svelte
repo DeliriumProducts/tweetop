@@ -1,7 +1,33 @@
 <script>
   import Navbar from "./components/Navbar"
   import Tweet from "./components/Tweet"
-  let name
+  let tweets = [
+    {
+      username: "Dan Abramov",
+      handle: "@dan_abramov",
+      avi:
+        "https://pbs.twimg.com/profile_images/1096807971374448640/rVCDhxkG.png",
+      rt: 256,
+      content:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, iste voluptatem omnis repellendus voluptatum excepturi vel distinctio repellat cumque quos dolorem quisquam praesentium reprehenderit atque quod fugit voluptatibus aperiam? Ipsum. ",
+    },
+    {
+      username: "Delirium Products!",
+      handle: "@deliprods",
+      avi:
+        "https://pbs.twimg.com/profile_images/1157472456505999363/T8w9d7hq.jpg",
+      rt: 50,
+      content: "We are pleased to announce our latest project - LuncherBox!",
+    },
+    {
+      username: "fr3fou!! 🎀",
+      handle: "@fr3fou",
+      avi:
+        "https://pbs.twimg.com/profile_images/1064209784944189440/QtTtTJuT.jpg",
+      rt: 2,
+      content: "i am the retarded",
+    },
+  ]
 </script>
 
 <style>
@@ -61,6 +87,11 @@
   .username:focus {
     outline: none;
   }
+
+  .tweet-wrapper {
+    width: 100%;
+    margin-top: 1rem;
+  }
 </style>
 
 <div class="container">
@@ -73,14 +104,10 @@
     <div class="divider" />
     <input placeholder="Username" class="username" type="text" />
     <div class="divider" />
-    <Tweet
-      username="Dan Abramov"
-      handle="@dan_abramov"
-      avi="https://pbs.twimg.com/profile_images/1096807971374448640/rVCDhxkG.png"
-      rt="256"
-      content=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Minima, iste voluptatem omnis repellendus voluptatum excepturi vel
-      distinctio repellat cumque quos dolorem quisquam praesentium reprehenderit
-      atque quod fugit voluptatibus aperiam? Ipsum. " />
+    {#each tweets as tweet}
+      <div class="tweet-wrapper">
+        <Tweet {...tweet} />
+      </div>
+    {/each}
   </div>
 </div>

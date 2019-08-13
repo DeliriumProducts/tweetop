@@ -13,6 +13,7 @@
   .container {
     background: #f1f6fa;
     border-radius: 1.6rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
