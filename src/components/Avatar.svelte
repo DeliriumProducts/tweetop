@@ -8,7 +8,7 @@
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
-    border: solid #1da1f2 5px;
+    border: solid #1da1f2 3px;
   }
 </style>
 

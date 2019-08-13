@@ -1,5 +1,6 @@
 <script>
   import Navbar from "./components/Navbar"
+  import Tweet from "./components/Tweet"
   let name
 </script>
 
@@ -16,7 +17,7 @@
     flex-direction: column;
     padding: 1rem;
     text-align: center;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -72,5 +73,14 @@
     <div class="divider" />
     <input placeholder="Username" class="username" type="text" />
     <div class="divider" />
+    <Tweet
+      username="Dan Abramov"
+      handle="@dan_abramov"
+      avi="https://pbs.twimg.com/profile_images/1096807971374448640/rVCDhxkG.png"
+      rt="256"
+      content=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Minima, iste voluptatem omnis repellendus voluptatum excepturi vel
+      distinctio repellat cumque quos dolorem quisquam praesentium reprehenderit
+      atque quod fugit voluptatibus aperiam? Ipsum. " />
   </div>
 </div>
