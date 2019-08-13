@@ -48,13 +48,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .rt-icon-wrapper {
     margin-left: 0.5rem;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.3rem;
+    height: 1.3rem;
   }
 
   .content {
