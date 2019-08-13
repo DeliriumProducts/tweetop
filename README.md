@@ -7,7 +7,7 @@
 - [ ] oauth with go backend with twitter api
 - [ ] make tweet component
   - [ ] handle posts with images
-  - [ ] handle posts with embeded tweets (quote tweets)
+  - [ ] handle posts with embeded tweets (quote tweets) - maybe with `<slot />`?
   - [x] handle regular posts
   - [ ] handle polls
   - [ ] handle links (previews)
