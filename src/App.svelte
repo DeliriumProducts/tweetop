@@ -12,7 +12,7 @@
       username: "Dan Abramov",
       handle: "@dan_abramov",
       avi:
-        "https://pbs.twimg.com/profile_images/1096807971374448640/rVCDhxkG.png",
+        "https://pbs.twimg.com/profile_images/1166344766210150401/amRnWzl-.jpg",
       rt: 99999,
       content: "react hooks",
     },
